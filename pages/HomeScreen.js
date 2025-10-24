@@ -22,6 +22,30 @@ export default function HomeScreen({ navigation }) {
                         <Text style={styles.buttonTitle}>HyperLinking</Text>
 
                     </TouchableOpacity>
+                    <TouchableOpacity
+                        style={[styles.featureButton, styles.cameraButton]}
+                        onPress={() => navigation.navigate('MD5')}
+                    >
+                        <Text style={styles.buttonTitle}>MD5</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={[styles.featureButton, styles.cameraButton]}
+                        onPress={() => navigation.navigate('ProfanityFilter')}
+                    >
+                        <Text style={styles.buttonTitle}>Profanity Filter</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={[styles.featureButton, styles.cameraButton]}
+                        onPress={() => navigation.navigate('QrCode')}
+                    >
+                        <Text style={styles.buttonTitle}>QR Code</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={[styles.featureButton, styles.cameraButton]}
+                        onPress={() => navigation.navigate('SHA256')}
+                    >
+                        <Text style={styles.buttonTitle}>SHA256</Text>
+                    </TouchableOpacity>
                     {/* <TouchableOpacity
                         style={[styles.featureButton, styles.cameraButton]}
                         onPress={() => navigation.navigate('Camera')}
