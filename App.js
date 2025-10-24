@@ -13,6 +13,7 @@ import MD5 from './pages/MD5';
 import ProfanityFilter from './pages/ProfanityFilter';
 import QrCode from './pages/QrCode';
 import SHA256 from './pages/SHA256';
+import Speedometer from './pages/SpeedoMeterGraph';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ const App = () => {
         <Stack.Screen name="ProfanityFilter" component={ProfanityFilter} />
         <Stack.Screen name="QrCode" component={QrCode} />
         <Stack.Screen name="SHA256" component={SHA256} />
+        <Stack.Screen name="SpeedometerGraph" component={Speedometer} />
       </Stack.Navigator>
     </NavigationContainer>
   );

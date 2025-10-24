@@ -13,7 +13,7 @@ import {
 //Import library for Speedometer
 import RNSpeedometer from 'react-native-speedometer';
 
-const App = () => {
+const Speedometer = () => {
     const [meterValue, setMeterValue] = useState(20);
 
     function onMeterChange(value) {
@@ -79,7 +79,7 @@ const App = () => {
     );
 };
 
-export default App;
+export default Speedometer;
 
 const styles = StyleSheet.create({
     container: {
