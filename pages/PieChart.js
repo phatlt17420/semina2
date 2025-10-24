@@ -19,7 +19,7 @@ const SERIES_API = dataValues.map((value, index) => ({
 
 // --- Component Biểu đồ ---
 // Component được định nghĩa là một hàm component và được export để sử dụng
-const PieChart = () => {
+const NewPieChart = () => {
     const chartWidthAndHeight = 300;
 
     return (
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default PieChart;
+export default NewPieChart;

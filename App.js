@@ -14,6 +14,7 @@ import ProfanityFilter from './pages/ProfanityFilter';
 import QrCode from './pages/QrCode';
 import SHA256 from './pages/SHA256';
 import Speedometer from './pages/SpeedoMeterGraph';
+import NewPieChart from './pages/PieChart';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ const App = () => {
         <Stack.Screen name="Camera" component={CameraScreen} />
         <Stack.Screen name="Screenshot" component={ScreenshotScreen} />
         <Stack.Screen name="Chart" component={ChartScreen} />
+        <Stack.Screen name="PieChart" component={NewPieChart} />
         <Stack.Screen name="HyperLinking" component={HyperLinkingApp} />
         <Stack.Screen name="MD5" component={MD5} />
         <Stack.Screen name="ProfanityFilter" component={ProfanityFilter} />

@@ -17,6 +17,13 @@ export default function HomeScreen({ navigation }) {
                         </TouchableOpacity>
                         <TouchableOpacity
                             style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('PieChart')}
+                        >
+                            <Text style={styles.buttonTitle}>Pie Chart</Text>
+
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
                             onPress={() => navigation.navigate('Chart')}
                         >
                             <Text style={styles.buttonTitle}>Chart Kit</Text>
@@ -72,7 +79,7 @@ export default function HomeScreen({ navigation }) {
                     </View>
                 </View>
             </ScrollView>
- 
+
         </SafeAreaView>
     );
 }
