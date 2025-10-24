@@ -2,7 +2,7 @@
 // https://aboutreact.com/generate-sha256-encoded-hash-in-react-native/
 
 // import React in our code
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 // import all the components we are going to use
 import {
@@ -13,8 +13,7 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-
-import {sha256} from 'react-native-sha256';
+import CryptoJS from 'crypto-js';
 
 const SHA256 = () => {
   const [inputText, setInputText] = useState('');
@@ -22,10 +21,9 @@ const SHA256 = () => {
 
   const convertSHA = () => {
     //Encode SHA256
-    sha256(inputText).then((hash) => {
-      setText(hash);
-    });
-  };
+    const hash = CryptoJS.SHA256(inputText).toString(); 
+    setText(hash);
+};
 
   return (
     <SafeAreaView style={{flex: 1}}>

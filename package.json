@@ -12,6 +12,7 @@
     "@react-navigation/elements": "^2.6.4",
     "@react-navigation/native-stack": "^7.3.26",
     "bad-words": "^4.0.0",
+    "crypto-js": "^4.2.0",
     "expo": "~54.0.9",
     "expo-camera": "^17.0.8",
     "expo-media-library": "^18.2.0",
