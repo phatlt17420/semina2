@@ -14,12 +14,12 @@ import {
 } from 'react-native';
 
 // Import profanity filter
-import Filter from 'bad-words';
+import {Filter} from 'bad-words';
 
 const ProfanityFilter = () => {
   let [inputValue, setInputValue] = useState('');
 
-  const filter = new Filter();
+  const filter = new Filter({ list: ['bad1', 'bad2', 'bad3'] }); 
 
   const handleInput = (value) => {
     setInputValue(value);
