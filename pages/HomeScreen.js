@@ -1,28 +1,58 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.content}>
-                <Text style={styles.title}>Demo</Text>
-                <View style={styles.buttonsContainer}>
-                    <TouchableOpacity
-                        style={[styles.featureButton, styles.cameraButton]}
-                        onPress={() => navigation.navigate('Chart')}
-                    >
-                        <Text style={styles.buttonTitle}>Chart Kit</Text>
+            <ScrollView>
+                <View style={styles.content}>
+                    <Text style={styles.title}>Demo</Text>
+                    <View style={styles.buttonsContainer}>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('SpeedometerGraph')}
+                        >
+                            <Text style={styles.buttonTitle}>Speedometer Graph</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('Chart')}
+                        >
+                            <Text style={styles.buttonTitle}>Chart Kit</Text>
 
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        style={[styles.featureButton, styles.cameraButton]}
-                        onPress={() => navigation.navigate('HyperLinking')}
-                    >
-                        <Text style={styles.buttonTitle}>HyperLinking</Text>
-
-                    </TouchableOpacity>
-                    {/* <TouchableOpacity
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('HyperLinking')}
+                        >
+                            <Text style={styles.buttonTitle}>HyperLinking</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('MD5')}
+                        >
+                            <Text style={styles.buttonTitle}>MD5</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('ProfanityFilter')}
+                        >
+                            <Text style={styles.buttonTitle}>Profanity Filter</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('QrCode')}
+                        >
+                            <Text style={styles.buttonTitle}>QR Code</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={[styles.featureButton, styles.cameraButton]}
+                            onPress={() => navigation.navigate('SHA256')}
+                        >
+                            <Text style={styles.buttonTitle}>SHA256</Text>
+                        </TouchableOpacity>
+                        {/* <TouchableOpacity
                         style={[styles.featureButton, styles.cameraButton]}
                         onPress={() => navigation.navigate('Camera')}
                     >
@@ -31,7 +61,7 @@ export default function HomeScreen({ navigation }) {
                         <Text style={styles.buttonDescription}>Take photos with front/back camera</Text>
                     </TouchableOpacity> */}
 
-                    {/* <TouchableOpacity
+                        {/* <TouchableOpacity
                         style={[styles.featureButton, styles.screenshotButton]}
                         onPress={() => navigation.navigate('Screenshot')}
                     >
@@ -39,8 +69,10 @@ export default function HomeScreen({ navigation }) {
                         <Text style={styles.buttonTitle}>Screenshot</Text>
                         <Text style={styles.buttonDescription}>Capture screen content</Text>
                     </TouchableOpacity> */}
+                    </View>
                 </View>
-            </View>
+            </ScrollView>
+ 
         </SafeAreaView>
     );
 }
@@ -52,7 +84,8 @@ const styles = StyleSheet.create({
     },
     content: {
         flex: 1,
-        padding: 20,
+        paddingLeft: 20,
+        paddingRight: 20,
         justifyContent: 'center',
     },
     title: {

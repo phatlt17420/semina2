@@ -9,6 +9,12 @@ import HomeScreen from './pages/HomeScreen';
 import ScreenshotScreen from './pages/ScreenshotScreen';
 import ChartScreen from './pages/ChartScreen';
 import HyperLinkingApp from './pages/HyperLinkingPage'
+import MD5 from './pages/MD5';
+import ProfanityFilter from './pages/ProfanityFilter';
+import QrCode from './pages/QrCode';
+import SHA256 from './pages/SHA256';
+import Speedometer from './pages/SpeedoMeterGraph';
+
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -20,6 +26,11 @@ const App = () => {
         <Stack.Screen name="Screenshot" component={ScreenshotScreen} />
         <Stack.Screen name="Chart" component={ChartScreen} />
         <Stack.Screen name="HyperLinking" component={HyperLinkingApp} />
+        <Stack.Screen name="MD5" component={MD5} />
+        <Stack.Screen name="ProfanityFilter" component={ProfanityFilter} />
+        <Stack.Screen name="QrCode" component={QrCode} />
+        <Stack.Screen name="SHA256" component={SHA256} />
+        <Stack.Screen name="SpeedometerGraph" component={Speedometer} />
       </Stack.Navigator>
     </NavigationContainer>
   );
